@@ -6,7 +6,7 @@ print(a_list) # [1, 2, 4, 5] 위치값 삭제
 a_list.pop() # 맨뒤삭제, 특정위치 삭제
 print(a_list)
 
-a_list.remove(1) # 위치값이 아니라 데이터값 삭제
+a_list.remove(1) # 위치값이 아니라 데이터값 삭제, 해당 데이터를 가지고 삭제
 print(a_list)
 
 a_list.clear() # 전체삭제

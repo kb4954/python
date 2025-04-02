@@ -46,6 +46,11 @@ while True:
             print(f"{s['no']}\t,{s['name']}\t,{s['kor']}\t,{s['eng']}\t,{s['math']}\t,{s['total']}\t,{s['avg']}\t,{s['rank']}\t,")
             
         print()    
+        
+    elif choice == 0:
+        print("[ 프로그램 종료 ]")
+        break
+        
             
         
     

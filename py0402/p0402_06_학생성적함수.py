@@ -62,35 +62,6 @@ while True:
     if choice == 1:
         count = stu_input(count)
             
-            
-            
-            
-            
-            
-            
-            # while True:
-            #     score[1] = input(f"{title[3]}점수를 입력하세요.>> ")
-            #     if score[1].isdigit():
-            #         score[1] = int(score[1])
-            #         if 0 <= score[1] <= 100:
-            #             break    
-            #         else: print("점수는 0~100사이의 값을 입력하셔야합니다.")
-            #     else: print("숫자만 가능합니다.")
-            # while True:    
-            #     score[2] = input(f"{title[4]}점수를 입력하세요.>> ")
-            #     if score[2].isdigit():
-            #         score[2] = int(score[2])
-            #         if 0 <= score[2] <= 100:
-            #             break    
-            #         else: print("점수는 0~100사이의 값을 입력하셔야합니다.")
-            #     else: print("숫자만 가능합니다.")
-                            
-                # no,name,kor,eng,math
-                # 합계,평균
-                
-            
-                    
-                    
     elif choice == 2:
         print("[ 학생성적출력 ]")
         print("-"*60)
@@ -98,12 +69,13 @@ while True:
         print("-"*60)
         for s in students:
             print(f"{s['no']}\t{s['name']}\t{s['kor']}\t{s['eng']}\t{s['math']}\t{s['total']}\t{s['avg']:.2f}\t{s['rank']}")
-        print()
-        
+        print()       
+         
     elif choice == 3:
         print("[ 학생성적수정 ]")
         name = input("수정하려고 하는 학생이름을 입력하세요.>> ")
-        #이전화면 이동 확인 함 해보깅
+        #이전화면 이동 확인 함 해보깅       
+        
         temp = 0 # 찾고자하는 학생이 없을 경우
         for s in students:
             if name in s['name']: # 찾았을 경우
@@ -142,14 +114,43 @@ while True:
                     s['avg'] = s['total']/3
                     # 합계, 평균 수정
                     print(f"수학점수 {pre_math}점을 {s['math']} 으로 변경하였습니다.")
+                    
+            
+            
+            # while True:
+            #     score[1] = input(f"{title[3]}점수를 입력하세요.>> ")
+            #     if score[1].isdigit():
+            #         score[1] = int(score[1])
+            #         if 0 <= score[1] <= 100:
+            #             break    
+            #         else: print("점수는 0~100사이의 값을 입력하셔야합니다.")
+            #     else: print("숫자만 가능합니다.")
+            # while True:    
+            #     score[2] = input(f"{title[4]}점수를 입력하세요.>> ")
+            #     if score[2].isdigit():
+            #         score[2] = int(score[2])
+            #         if 0 <= score[2] <= 100:
+            #             break    
+            #         else: print("점수는 0~100사이의 값을 입력하셔야합니다.")
+            #     else: print("숫자만 가능합니다.")
+                            
+                # no,name,kor,eng,math
+                # 합계,평균
                 
+            
+                    
+                    
+
+        
+ 
+        
                 
                 print()
                     
             # 여기에 else를 쓰지 않는 이유: 못찾았다는 멘트가 매번 나오다가 찾았다라는 멘트가 나올 수 있기때문    
         # 수정할 학생을 찾지 못했을 경우
         if temp == 0:
-            print("수정하고자하는 학생을 찾지 못했습니다. 다시 입력하세요.!!")
+            print("수정하고자하는 학생을 찾지 못했습니다. 다시 입력하세요.!!")    
             
             
         

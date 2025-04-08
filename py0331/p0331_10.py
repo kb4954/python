@@ -34,10 +34,10 @@ while True:
             if a_list[i][j] == num: a_list[i][j] = "X"
             print()
                 
-        num1 = int(input("X좌표 : "))
-        num2 = int(input("Y좌표 : "))            
-        a_list[num2][num1] = "X"
-        print()
+        # num1 = int(input("X좌표 : "))
+        # num2 = int(input("Y좌표 : "))            
+        # a_list[num2][num1] = "X"
+        # print()
                     
     
     # x좌표 : 1

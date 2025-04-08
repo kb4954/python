@@ -41,5 +41,6 @@ while True:
         print("-"*60)
         # 반복문 써야됨
         for s in students.students:
-            print(s.no,s.n)
+            print(f"{s.no},{s.name},{s.kor},{s.eng},{s.math},{s.total},{s.avg},{s.rank}")
+            
         

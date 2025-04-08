@@ -6,7 +6,7 @@ class Student:
     
     # 생성자함수
     def __init__(self,name,kor,eng,math): # 초기화의 약자
-        self.no = Student.count # 클래스 변수
+        self.no = Student.count # 인스턴스 변수
         self.name = name
         self.kor = kor
         self.eng = eng
@@ -32,6 +32,20 @@ class Students:
         # 이 객체 안에 students 리스트를 하나 만들자는 의미 
     def add(self,s):
         self.students.append(s)
+        
+
+    def __ge__(self,s):
+        return(self.total<=s.total)
+        
+    
+    def __ge__(self,s):
+        return(self.total>=s.total)
+        
+    def __eq__(self,s): # 다른객체 1개를 매개변수로 전달받음
+        return(self.total == s.total) # True,  다르면 False
+        
+        
+        
         
     def __str__(self): # 리턴이 무조건 문자열을 해줘야함.
         for s in self.students:

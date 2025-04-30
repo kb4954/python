@@ -95,7 +95,7 @@ while True:
                 if choice == 1:
                     pre_kor = s['kor'] # 이전국어점수변수를 하나 받아놓기
                     print(f"현재 국어점수 : {pre_kor}")
-                    s['kor'] = int(input("변경 국어점수 : "))
+                   
                     s['total'] = s['kor']+s['eng']+s['math']
                     s['avg'] = s['total']/3
                     # 합계, 평균 수정
